@@ -67,14 +67,14 @@ const Home = () => {
     <div className="mt-8 flex flex-col items-center">
       <form className="flex" onSubmit={onSubmitChat}>
         <input
-          className="text-2xl p-2 focus:outline-none rounded-lg border-2 border-pink-200 focus:border-pink-400"
+          className="text-2xl p-2 focus:outline-none rounded-lg border-2 border-blue-200 focus:border-blue-400"
           type="text"
           value={content}
           disabled={isLoading}
           onChange={(e) => setContent(e.target.value)}
         />
         <button
-          className="ml-4 flex items-center bg-pink-400 text-2xl px-4 py-[10px] rounded-full shadow-md shadow-pink-200 hover:bg-pink-500"
+          className="ml-4 flex items-center bg-blue-400 text-2xl px-4 py-[10px] rounded-full shadow-md shadow-blue-200 hover:bg-blue-500"
           type="submit"
           disabled={isLoading}
         >

@@ -4,15 +4,17 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="px-2 py-4 flex justify-center gap-8 shadow-md">
+    <header className="px-4 py-6 flex justify center gap-10 bg-gradient-to-r from-blue-500 to-green-500 shadow-emerald-700">
       <Link
-        className={`link-style ${location.pathname === "/" && "text-gray-900"}`}
+        className={`link-style p-2 rounded-lg hover:bg-blue-100  ${
+          location.pathname === "/" && "text-gray-900"
+        }`}
         to="/"
       >
         질문하기
       </Link>
       <Link
-        className={`link-style ${
+        className={`link-style p-2 rounded-lg hover:bg-blue-100 ${
           location.pathname === "/chat-list" && "text-gray-900"
         }`}
         to="/chat-list"
